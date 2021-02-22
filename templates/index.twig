@@ -13,18 +13,17 @@
 				{# <img src="{{ siteUrl }}assets/images/placeholder.com-logo3.jpg" height="50px" width="200px" alt=""> #}
 				{% set slug = craft.app.request.getSegment(1) %}
 				{# <h1> #}
-				{# {{ slug }} #}
-				{# </h1> #}
-                <div class="nav-right"> 
+                    {# </h1> #}
+                    <div class="nav-right"> 
                         {% for link in header.navigation %}
-                            {% set url = link.linkUrl.one() %}  
+                        {% set url = link.linkUrl.one() %}  
+                        {# {{ slug }} #}
                             <a href="{{ url.url }}" class="nav-link {% if slug == url.slug %}nav-link-active{% endif %}">{{ link.linkText }}</a>
                         {% endfor %}
 				</div>
 			</nav>
 		</header>
-
-    Welcome
+    
     {% block content %}
 
     {% endblock %}

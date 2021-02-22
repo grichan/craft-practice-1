@@ -1,0 +1,10 @@
+{% extends "index" %}
+
+
+{% block content %}
+
+<img src="{{ entry.aboutUsImage.one().getUrl('md') }}" alt="">
+
+    {{ entry.richText}}
+
+{% endblock %}

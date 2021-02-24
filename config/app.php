@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Yii Application Config
  *
@@ -21,8 +22,10 @@ use craft\helpers\App;
 
 return [
     'id' => App::env('APP_ID') ?: 'CraftCMS',
-    'modules' => [
-        'my-module' => \modules\Module::class,
+    'modules'   => [
+        'site-module' => [
+            'class' => \modules\sitemodule\SiteModule::class,
+        ],
     ],
-    //'bootstrap' => ['my-module'],
+    'bootstrap' => ['site-module'],
 ];

@@ -1,3 +1,6 @@
 body {
-  background-color: royalblue;
+  background-color: yellow;
+  background-image: url("../img/eisf.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

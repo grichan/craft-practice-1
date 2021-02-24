@@ -24,7 +24,7 @@ return [
     'id' => App::env('APP_ID') ?: 'CraftCMS',
     'modules'   => [
         'site-module' => [
-            'class' => \modules\sitemodule\SiteModule::class,
+            'class' => \modules\SiteModule\SiteModule::class,
         ],
     ],
     'bootstrap' => ['site-module'],

@@ -9,7 +9,8 @@
   },
   "autoload": {
     "psr-4": {
-      "modules\\SiteModule\\": "modules/SiteModule/src/"
+      "modules\\SiteModule\\": "modules/SiteModule/Src",
+      "modules\\SiteModule\\AssetBundles\\": "modules/SiteModule/Src/AssetBundles"
     }
   },
   "config": {

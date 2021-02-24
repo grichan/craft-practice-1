@@ -9,9 +9,9 @@
  * @copyright Copyright (c) 2018 nystudio107
  */
 
-namespace modules\sitemodule;
+namespace modules\SiteModule;
 
-use modules\sitemodule\assetbundles\sitemodule\SiteModuleAsset;
+use modules\SiteModule\AssetBundles\SiteModuleAsset;
 
 use Craft;
 use craft\events\RegisterTemplateRootsEvent;
@@ -49,8 +49,8 @@ class SiteModule extends Module
      */
     public function __construct($id, $parent = null, array $config = [])
     {
-        Craft::setAlias('@modules/sitemodule', $this->getBasePath());
-        $this->controllerNamespace = 'modules\sitemodule\controllers';
+        Craft::setAlias('@modules/SiteModule', $this->getBasePath());
+        $this->controllerNamespace = 'modules\SiteModule\controllers';
 
         // Translation category
         $i18n = Craft::$app->getI18n();
@@ -59,7 +59,7 @@ class SiteModule extends Module
             $i18n->translations[$id] = [
                 'class' => PhpMessageSource::class,
                 'sourceLanguage' => 'en-US',
-                'basePath' => '@modules/sitemodule/translations',
+                'basePath' => '@modules/SiteModule/translations',
                 'forceTranslation' => true,
                 'allowOverrides' => true,
             ];

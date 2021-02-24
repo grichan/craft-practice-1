@@ -9,13 +9,13 @@
  * @copyright Copyright (c) 2018 nystudio107
  */
 
-namespace Modules\Sitemodule\AssetBundles\SiteModule;
+namespace modules\SiteModule\AssetBundles;
 
 use Craft;
 use craft\web\AssetBundle;
 use craft\web\assets\cp\CpAsset;
 
-/**
+/**\
  * @author    nystudio107
  * @package   SiteModule
  * @since     1.0.0
@@ -30,7 +30,7 @@ class SiteModuleAsset extends AssetBundle
      */
     public function init()
     {
-        $this->sourcePath = "@modules/sitemodule/assetbundles/sitemodule/dist";
+        $this->sourcePath = "@modules/SiteModule/AssetBundles/SiteModule/dist";
 
         $this->depends = [
             CpAsset::class,

@@ -15,6 +15,8 @@ use modules\Plugin2Module\Plugin2Module;
 
 use Craft;
 use craft\base\Component;
+use craft\elements\Entry;
+use craft\elements\MatrixBlock;
 
 
 /**
@@ -49,8 +51,20 @@ class Plugin2ModuleService extends Component
     {
         $items = [];
 
+        $articles = \craft\elements\MatrixBlock::find()
+            ->field('articles')
+            ->all();
 
+        foreach ($articles as $article) {
+            // some logic
 
-        return 'yes';
+            $items[] = [
+                'title' => $article->articleTitle,
+                'body' => $article->articleBody,
+                'authors' => $article->articleReferences,
+            ];
+        }
+
+        return $items;
     }
 }

@@ -4,16 +4,22 @@
 {% block content %}
     {% set articles = entry.articles %}
     {% for article in articles %}
-        {{article.articleTitle}} <br>
-        {{article.articleBody}} <br>
-        {{article.articleReferences}} <br>
-        {{article.someTrigger}} <br>
+
     {% endfor %}
 
 <pre>
 
-    {{ craft.Plugin2Module.newsList([]) }}
+
 
 </pre>
+
+{% set articles = craft.Plugin2Module.newsList() %}
+
+{% for article in articles %}
+        {{article.title}} <br>
+        {{article.body}} <br>
+        {{article.authors}} <br>
+{% endfor %}
+
 
 {% endblock %}

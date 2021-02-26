@@ -25,7 +25,16 @@ return [
     'modules'   => [
         'site-module' => [
             'class' => \modules\SiteModule\SiteModule::class,
+
+        ],
+        'plugin2-module' => [
+            'class' => \modules\Plugin2Module\Plugin2Module::class,
+            'components' => [
+                'Plugin2ModuleService' => [
+                    'class' => modules\Plugin2Module\services\Plugin2ModuleService::class,
+                ],
+            ],
         ],
     ],
-    'bootstrap' => ['site-module'],
+    'bootstrap' => ['site-module', 'plugin2-module'],
 ];

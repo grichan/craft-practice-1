@@ -10,7 +10,10 @@
   "autoload": {
     "psr-4": {
       "modules\\SiteModule\\": "modules/SiteModule/Src",
-      "modules\\SiteModule\\AssetBundles\\": "modules/SiteModule/Src/AssetBundles"
+      "modules\\SiteModule\\AssetBundles\\": "modules/SiteModule/Src/AssetBundles",
+      "modules\\Plugin2Module\\": "modules/Plugin2Module/src",
+      "modules\\Plugin2Module\\services\\": "modules/Plugin2Module/src/services",
+      "modules\\Plugin2Module\\variables\\": "modules/Plugin2Module/src/variables"
     }
   },
   "config": {

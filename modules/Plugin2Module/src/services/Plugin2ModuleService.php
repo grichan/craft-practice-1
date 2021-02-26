@@ -49,6 +49,8 @@ class Plugin2ModuleService extends Component
     {
         $items = [];
 
-        return $items;
+
+
+        return 'yes';
     }
 }

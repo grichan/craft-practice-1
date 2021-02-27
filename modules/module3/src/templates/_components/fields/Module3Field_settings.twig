@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Module3 module for Craft CMS
+ *
+ * Module3Field Field Settings
+ *
+ * @author    Vlad
+ * @copyright Copyright (c) 2021 Vlad
+ * @link      https://github.com/grichan
+ * @package   Module3
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("modules\\module3\\assetbundles\\module3\\Module3Asset") %}
+
+{{ forms.textField({
+    label: 'Some Attribute',
+    instructions: 'Enter some attribute here.',
+    id: 'someAttribute',
+    name: 'someAttribute',
+    value: field['someAttribute']})
+}}

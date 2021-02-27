@@ -13,7 +13,9 @@
       "modules\\SiteModule\\AssetBundles\\": "modules/SiteModule/Src/AssetBundles",
       "modules\\Plugin2Module\\": "modules/Plugin2Module/src",
       "modules\\Plugin2Module\\services\\": "modules/Plugin2Module/src/services",
-      "modules\\Plugin2Module\\variables\\": "modules/Plugin2Module/src/variables"
+      "modules\\Plugin2Module\\variables\\": "modules/Plugin2Module/src/variables",
+      "modules\\module3\\": "modules/module3/src",
+      "modules\\module3\\services\\": "modules/module3/src/services"
     }
   },
   "config": {

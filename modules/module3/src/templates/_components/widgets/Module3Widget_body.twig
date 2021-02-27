@@ -1,0 +1,20 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Module3 module for Craft CMS
+ *
+ * Module3Widget Widget Body
+ *
+ * @author    Vlad
+ * @copyright Copyright (c) 2021 Vlad
+ * @link      https://github.com/grichan
+ * @package   Module3
+ * @since     1.0.0
+ */
+#}
+
+{% set iconUrl = view.getAssetManager().getPublishedUrl('@modules/module3/assetbundles/module3widgetwidget/dist', true) ~ '/img/Module3Widget-icon.svg' %}
+
+<img src="{{ iconUrl }}" height="64" width="64" />
+
+<p>{{ message }}</p>

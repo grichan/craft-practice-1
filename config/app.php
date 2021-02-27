@@ -35,6 +35,14 @@ return [
                 ],
             ],
         ],
+        'module3' => [
+            'class' => \modules\module3\Module3::class,
+            'components' => [
+                'module3Service' => [
+                    'class' => modules\module3\services\Module3Service::class,
+                ],
+            ],
+        ],
     ],
-    'bootstrap' => ['site-module', 'plugin2-module'],
+    'bootstrap' => ['site-module', 'plugin2-module', 'module3'],
 ];

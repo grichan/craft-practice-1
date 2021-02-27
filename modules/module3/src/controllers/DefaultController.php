@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Module3 module for Craft CMS 3.x
  *

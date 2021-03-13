@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Module3 module for Craft CMS 3.x
  *
@@ -59,23 +60,6 @@ class DefaultController extends Controller
         $result = 'something';
 
         echo "Welcome to the console DefaultController actionIndex() method\n";
-
-        return $result;
-    }
-
-    /**
-     * Handle module3/default/do-something console commands
-     *
-     * The first line of this method docblock is displayed as the description
-     * of the Console Command in ./craft help
-     *
-     * @return mixed
-     */
-    public function actionDoSomething()
-    {
-        $result = 'something';
-
-        echo "Welcome to the console DefaultController actionDoSomething() method\n";
 
         return $result;
     }
